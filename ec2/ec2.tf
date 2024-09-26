@@ -11,7 +11,7 @@ resource "aws_instance" "terraform" {
 
 
 resource "aws_security_group" "allow_ssh_terraform"{
-    name        = "allow_sshh" #allow ssh is already there in my account
+    name        = "allow_ssh" #allow ssh is already there in my account
     description = "Allow port number 22 for SSH access"
      
      #usually we allow everything in the egress
@@ -32,7 +32,7 @@ resource "aws_security_group" "allow_ssh_terraform"{
   }
 
   tags = {
-    Name = "allow_sshh"
+    Name = "allow_ssh"
   }
 
 }
